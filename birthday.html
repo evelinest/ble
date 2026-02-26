@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>level 23 unlocked</title>
+
+<!-- Google Font -->
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #ffffff;
+    color: #1a1a1a;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 700px;
+    margin: auto;
+    padding: 60px 20px;
+}
+
+h1 {
+    font-size: 36px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+h2 {
+    font-size: 20px;
+    margin-top: 50px;
+    font-weight: 600;
+}
+
+p {
+    line-height: 1.7;
+    font-weight: 300;
+}
+
+ul {
+    padding-left: 20px;
+}
+
+.section {
+    margin-top: 40px;
+}
+
+.patch {
+    background: #f5f5f5;
+    padding: 20px;
+    border-radius: 12px;
+    margin-top: 15px;
+}
+
+button {
+    background: #f0f0f0;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 8px;
+    margin: 5px 5px 5px 0;
+    cursor: pointer;
+    font-family: 'Inter', sans-serif;
+}
+
+button:hover {
+    background: #e4e4e4;
+}
+
+.hidden {
+    display: none;
+    margin-top: 10px;
+    font-size: 14px;
+    color: #444;
+}
+
+/* Press Start Overlay */
+#intro {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #111;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 9999;
+    font-family: monospace;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+#intro span {
+    margin-top: 20px;
+    font-size: 16px;
+    opacity: 0.7;
+}
+
+#countdown {
+    font-weight: 600;
+    margin-top: 10px;
+    font-size: 18px;
+    color: #333;
+}
+</style>
+</head>
+
+<body>
+
+<!-- Press Start Screen -->
+<div id="intro">
+    PRESS START
+    <span>(click anywhere to enter)</span>
+</div>
+
+<div class="container" id="mainContent" style="display:none;">
+
+<h1>happy birthday, yoryy!</h1>
+<p>level 23 unlocked… wala ka pa ring airplane experience. amazing.</p>
+
+<div class="section">
+<p>
+hi.<br><br>
+
+so 23 ka na.<br><br>
+
+congrats sa pagiging tourism mainn,<br>
+“may enough time pa naman” ambassador,<br>
+at overthinker pero tuloy pa rin enjoyerr<br><br>
+
+proud ako sayo pero hindi ko sasabihin nang seryoso kasi baka lumaki ulo mo HAHAHAHA
+</p>
+</div>
+
+<h2>character development arc (i wanted it to be personal so HAHSAHHAHA, eto yung mga naaalala ko lang)</h2>
+<p>
+dating cutting classes<br>
+ngayon dean’s list streak<br>
+working student era mo na<br>
+internship warrior na yarn<br>
+“guest is always right” mindset ka na HAHAHAHA<br><br>
+
+ang lakas ng character development mo legitt  
+main character ka ba? nakakainisss
+</p>
+
+<h2>random facts about you na naremember ko</h2>
+<ul>
+<li>mama’s boy (nagki-kiss pa in public. brave.)</li>
+<li>introvert pero pag comfy, hindi na tumitigil</li>
+<li>professional glazer</li>
+<li>gala lover na never pa naka-ride ng plane ??? tourism ka pa ha</li>
+</ul>
+
+<h2>23 patch notes</h2>
+<div class="patch">
+update v23.0 released.<br><br>
+
+• responsibility stats increased<br>
+• eldest son pressure DLC added<br>
+• resilience +15<br>
+• overthinking still not fixed (known bug)<br>
+• internship arc unlocked<br>
+• pilot dreams: pending update<br><br>
+
+devs said stable build namann! (corny ba, nag experiment lang akoo, last time ko na to gagawin HAHAHAH)
+</div>
+
+<h2>quick reminders (wag ka mag-drama)</h2>
+
+<button onclick="toggle('r1')">pag napapagod ka</button>
+<div id="r1" class="hidden">matulog kaaaa yoryy, hindi ka talaga bida sa teleserye</div>
+
+<button onclick="toggle('r2')">pag stressed ka</button>
+<div id="r2" class="hidden">tao ka lang, hindi ka robot</div>
+
+<button onclick="toggle('r3')">pag may entitled na guest</button>
+<div id="r3" class="hidden">syempre smile ka pa din! isipin mo sahod, rant laterr</div>
+
+<button onclick="toggle('r4')">pag feeling mo napag-iiwanan ka</button>
+<div id="r4" class="hidden">drama mo lang 'yan minsan, you're actually doing fine.</div>
+
+<h2>countdown to next big goal</h2>
+<p id="countdown">loading...</p>
+
+<div class="section">
+<p>
+mali ata yung countdown ko ewan, pero jokes asideeee,<br><br>
+
+ang cool mo lang as a person<br>
+you try,<br>
+kahit pressured,<br>
+kahit pagod,<br>
+kahit tahimik ka lang minsann<br><br>
+
+and sana hindi mo mawala yung spark mo habang busy ka maging “responsible adult kuno”<br><br>
+
+23 looks good on you.<br><br>
+
+okay bye po, signing off yung 18 year old kits<br>
+go grind ulitt, tschuss!
+</p>
+</div>
+
+</div>
+
+<script>
+// Toggle hidden tips
+function toggle(id) {
+    var element = document.getElementById(id);
+    element.classList.toggle("hidden");
+}
+
+// Press Start Overlay
+document.getElementById('intro').addEventListener('click', function() {
+    this.style.display = 'none';
+    document.getElementById('mainContent').style.display = 'block';
+});
+
+// Countdown to next birthday
+const countdownEl = document.getElementById("countdown");
+
+function updateBirthdayCountdown() {
+    const now = new Date();
+    let year = now.getFullYear();
+
+    // set birthday month & day (example: yory's birthday: Feb 27)
+    const birthdayMonth = 1; // 0-indexed (Feb = 1)
+    const birthdayDay = 27;
+
+    // create next birthday date
+    let nextBirthday = new Date(year, birthdayMonth, birthdayDay);
+
+    // if birthday already passed this year, use next year
+    if (now > nextBirthday) {
+        nextBirthday = new Date(year + 1, birthdayMonth, birthdayDay);
+    }
+
+    const distance = nextBirthday - now;
+
+    const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    const hours = Math.floor((distance % (1000 * 60 * 60 *24)) / (1000 * 60 * 60));
+    const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+    countdownEl.innerHTML = `${days}d ${hours}h ${minutes}m ${seconds}s`;
+}
+
+setInterval(updateBirthdayCountdown, 1000);
+updateBirthdayCountdown();
+</script>
+
+</body>
+</html>
